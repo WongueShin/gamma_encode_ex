@@ -9,17 +9,23 @@
     <style>
         .container {
             display: grid;
-            width: 300px;
-            grid-template-columns: repeat(2, 1fr);
+            width: 550px;
+            grid-template-columns: repeat(4, 1fr);
             align-items: center;
             justify-items: center;
             background-color: rgba(80, 80, 80, 0.2);
+            padding: 10px;
         }
 
         .box {
             height: 55px;
             width: 55px;
             margin: 1px;
+        }
+
+        .encodedDescription {
+            font-size: x-small;
+            text-align: center;
         }
 
         .bottomMargin {
@@ -130,29 +136,53 @@
 <body>
 <div class="container">
     <p>liner</p>
+    <p/>
     <p>gamma-encoded</p>
+    <p/>
     <div class="box" id="liner1"></div>
+    <p>bright = 0</p>
     <div class="box" id="encoded1"></div>
+    <p class="encodedDescription">255 (0/255) ^ 2.2 => 0</p>
     <div class="box" id="liner2"></div>
+    <p>bright = 25.5</p>
     <div class="box" id="encoded2"></div>
+    <p class="encodedDescription">bright = 255 (25.5/255) ^ 2.2 => 1.60894122842</p>
     <div class="box" id="liner3"></div>
+    <p>bright = 51</p>
     <div class="box" id="encoded3"></div>
+    <p class="encodedDescription">bright = 255 (51/255) ^ 2.2 => 7.39275256951</p>
     <div class="box" id="liner4"></div>
+    <p>bright = 76.5</p>
     <div class="box" id="encoded4"></div>
+    <p class="encodedDescription">bright = 255 (76.5/255) ^ 2.2 => 18.0387708144</p>
     <div class="box" id="liner5"></div>
+    <p>bright = 102</p>
     <div class="box" id="encoded5"></div>
+    <p class="encodedDescription">bright = 255 (102/255) ^ 2.2 => 33.968170862</p>
     <div class="box" id="liner6"></div>
+    <p>bright = 127.5</p>
     <div class="box" id="encoded6"></div>
+    <p class="encodedDescription">bright = 255 (127.5/255) ^ 2.2 => 55.4975984101</p>
     <div class="box" id="liner7"></div>
+    <p>bright = 153</p>
     <div class="box" id="encoded7"></div>
+    <p class="encodedDescription">bright = 255 (153/255) ^ 2.2 => 82.8844254429</p>
     <div class="box" id="liner8"></div>
+    <p>bright = 178.5</p>
     <div class="box" id="encoded8"></div>
+    <p class="encodedDescription">bright = 255 (178.5/255) ^ 2.2 => 116.347181891</p>
     <div class="box" id="liner9"></div>
+    <p>bright = 204</p>
     <div class="box" id="encoded9"></div>
+    <p class="encodedDescription">bright = 255 (204/255) ^ 2.2 => 156.076727966</p>
     <div class="box" id="liner10"></div>
+    <p>bright = 229.5</p>
     <div class="box" id="encoded10"></div>
+    <p class="encodedDescription">bright = 255 (229.5/255) ^ 2.2 => 202.243094246</p>
     <div class="box" id="liner11"></div>
+    <p>bright = 255</p>
     <div class="box" id="encoded11"></div>
+    <p class="encodedDescription">bright = 255 (255.5/255) ^ 2.2 => 255</p>
     <div class="bottomMargin"></div>
 </div>
 </body>
