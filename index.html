@@ -1,0 +1,159 @@
+<!--
+    MIT License
+    Author: WongueShin
+    Co-author: nochi
+    Created: 8.12.2023
+-->
+<html lang="en">
+<head>
+    <style>
+        .container {
+            display: grid;
+            width: 300px;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+            background-color: rgba(80, 80, 80, 0.2);
+        }
+
+        .box {
+            height: 55px;
+            width: 55px;
+            margin: 1px;
+        }
+
+        .bottomMargin {
+            height: 30px;
+        }
+
+        #liner1 {
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        #liner2 {
+            background-color: rgba(25.5, 25.5, 25.5, 1);
+        }
+
+        #liner3 {
+            background-color: rgba(51, 51, 51, 1);
+        }
+
+        #liner4 {
+            background-color: rgba(76.5, 76.5, 76.5, 1);
+        }
+
+        #liner5 {
+            background-color: rgba(102, 102, 102, 1);
+        }
+
+        #liner6 {
+            background-color: rgba(127.5, 127.5, 127.5, 1);
+        }
+
+        #liner7 {
+            background-color: rgba(153, 153, 153, 1);
+        }
+
+        #liner8 {
+            background-color: rgba(178.5, 178.5, 178.5, 1);
+        }
+
+        #liner9 {
+            background-color: rgba(204, 204, 204, 1);
+        }
+
+        #liner10 {
+            background-color: rgba(229.5, 229.5, 229.5, 1);
+        }
+
+        #liner11 {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        #encoded1 {
+            /* 255 (0/255) ^ 2.2 => 0 */
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        #encoded2 {
+            /* 255 (25.5/255) ^ 2.2 => 1.60894122842 */
+            background-color: rgba(1.60894122842, 1.60894122842, 1.60894122842, 1);
+        }
+
+        #encoded3 {
+            /* 255 (51/255) ^ 2.2 => 7.39275256951 */
+            background-color: rgba(7.39275256951, 7.39275256951, 7.39275256951, 1);
+        }
+
+        #encoded4 {
+            /* 255 (76.5/255) ^ 2.2 => 18.0387708144 */
+            background-color: rgba(18.0387708144, 18.0387708144, 18.0387708144, 1);
+        }
+
+        #encoded5 {
+            /* 255 (102/255) ^ 2.2 => 33.968170862 */
+            background-color: rgba(33.968170862, 33.968170862, 33.968170862, 1);
+        }
+
+        #encoded6 {
+            /* 255 (127.5/255) ^ 2.2 => 55.4975984101 */
+            background-color: rgba(55.4975984101, 55.4975984101, 55.4975984101, 1);
+        }
+
+        #encoded7 {
+            /* 255 (153/255) ^ 2.2 => 82.8844254429 */
+            background-color: rgba(82.8844254429, 82.8844254429, 82.8844254429, 1);
+        }
+
+        #encoded8 {
+            /* 255 (178.5/255) ^ 2.2 => 116.347181891 */
+            background-color: rgba(116.347181891, 116.347181891, 116.347181891, 1);
+        }
+
+        #encoded9 {
+            /* 255 (204/255) ^ 2.2 => 156.076727966 */
+            background-color: rgba(156.076727966, 156.076727966, 156.076727966, 1);
+        }
+
+        #encoded10 {
+            /* 255 (229.5/255) ^ 2.2 => 202.243094246 */
+            background-color: rgba(202.243094246, 202.243094246, 202.243094246, 1);
+        }
+
+        #encoded11 {
+            /* 255 (255.5/255) ^ 2.2 => 255 */
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+    <title>GammaEncodeExample</title>
+</head>
+<body>
+<div class="container">
+    <p>liner</p>
+    <p>gamma-encoded</p>
+    <div class="box" id="liner1"></div>
+    <div class="box" id="encoded1"></div>
+    <div class="box" id="liner2"></div>
+    <div class="box" id="encoded2"></div>
+    <div class="box" id="liner3"></div>
+    <div class="box" id="encoded3"></div>
+    <div class="box" id="liner4"></div>
+    <div class="box" id="encoded4"></div>
+    <div class="box" id="liner5"></div>
+    <div class="box" id="encoded5"></div>
+    <div class="box" id="liner6"></div>
+    <div class="box" id="encoded6"></div>
+    <div class="box" id="liner7"></div>
+    <div class="box" id="encoded7"></div>
+    <div class="box" id="liner8"></div>
+    <div class="box" id="encoded8"></div>
+    <div class="box" id="liner9"></div>
+    <div class="box" id="encoded9"></div>
+    <div class="box" id="liner10"></div>
+    <div class="box" id="encoded10"></div>
+    <div class="box" id="liner11"></div>
+    <div class="box" id="encoded11"></div>
+    <div class="bottomMargin"></div>
+</div>
+</body>
+</html>
